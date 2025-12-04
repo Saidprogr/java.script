@@ -5,8 +5,8 @@ if (yas !== null) {
 
     if (!isNaN(yasi)) {
         if (yasi < 21) {
-            alert("İcazə verilmədi");
-            alert("Zəhmət olmasa düzgün yaş daxil edin.");
+            alert("sayta giris qadagandir");
+            alert("düzgün yaş daxil edin.");
         } else {
             alert("İcazə verildi");
         }
