@@ -1,7 +1,14 @@
-let a = 21
-console.log(a === 20);
-console.log(a < 21);
-console.log(a !== 10);
-console.log(a <= 20);
-console.log(a % 2=== 20); 
-console.log
+const yas = prompt("yaşinizi yazin");
+
+if (yas !== null) {
+    const yasi = Number(yas);
+
+    if (!isNaN(yasi)) {
+        if (yasi < 21) {
+            alert("İcazə verilmədi");
+            alert("Zəhmət olmasa düzgün yaş daxil edin.");
+        } else {
+            alert("İcazə verildi");
+        }
+    }
+}
