@@ -1,27 +1,18 @@
-// function fillBalance(15) {
-//   balance += n15;
-//   console.log('The balance has been increased');
-//   console.log(`Available: ${balans}`);
-// }
 
-// let balance = 0;
+function capitalizeWords(text) {
+  let words = text.split(" ");     
+  let result = [];                 
 
-// fillBalance(5);
+  for (let i = 0; i < words.length; i++) {  
+    let word = words[i];  
+    let newWord =
+      word[0].toUpperCase() + word.slice(1); 
+    result.push(newWord); 
+  }
 
+  return result.join(" "); 
 
-
-
-// function logBalanceChange() {
-//   console.log('Balance changed');
-//   console.log(`Available: ${balans}`);
-// }
-// let balance = 0;
-
-
-
-
-// balance += 10;
-// logBalanceChange();
+}
 
 
 
@@ -32,60 +23,15 @@
 
 
 
-// let balance = 0;
-// balance += 10;
-// console.log('Balance changed');
-// console.log(`Available: ${balance}');
-
-
-// balance -= 5;
-// console.log('Balance changed');
-// console.log(`Available: ${balance}');
-
-
-// balance *= 2;
-// balance += 5;
-// console.log('Balance changed');
-// console.log(`Available: ${balance}`);
-
-
-// balance -= 8;
-// console.log('Balance changed');
-// console.log(`Available: ${balance}');
-// // let balance = 0;
-// // balance += 10;
-// // console.log('Balance changed');
-// // console.log(`Available: ${balance}');
-  
 
 
 
 
+function isNumber(phone) {
+  return phone.startsWith("+7") && phone.length == 12;
+}
 
 
-// balance -= 5;
-// console.log('Balance changed');
-// console.log(`Available: ${balans}');
-
-// balance *= 2;
-// balance += 5;
-// console.log('Balance changed');
-// console.log(`Available: ${balans}');
-
-// balance -= 8;
-// console.log('Balance changed');
-// console.log(`Available: ${balance}');
-
-
-let azn = Number(prompt("necese azn yaz"));
-
-let usdT= 1.7;
-let rubL = 0.0218;
-
-let usd = azn / usdT;
-let rub = azn / rubL;
-
-console.log("AZN:", azn);
-console.log("USD:", usd.toFixed(2));
-console.log("RUB:", rub.toFixed(2));
- 
+console.log(isNumber("+71234567800"));
+console.log(isNumber("+7123456789"));
+console.log(isNumber("71234567890"));
