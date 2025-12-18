@@ -1,37 +1,24 @@
 
-function capitalizeWords(text) {
-  let words = text.split(" ");     
-  let result = [];                 
+let a = 100;
 
-  for (let i = 0; i < words.length; i++) {  
-    let word = words[i];  
-    let newWord =
-      word[0].toUpperCase() + word.slice(1); 
-    result.push(newWord); 
+while (a <= 999) {
+  if (a % 10 === 0) {
+    console.log(a);
   }
+  a++;
+}
+console.log(" ");
 
-  return result.join(" "); 
+////////////////////////////////////////////
+let b = 10;
+let sum = 0;
 
+while (b <= 100) {
+  if (b % 2 !== 0) {
+    sum += b;
+  }
+  b++;
 }
 
+console.log(sum);
 
-
-
-
-
-
-
-
-
-
-
-
-
-function isNumber(phone) {
-  return phone.startsWith("+7") && phone.length == 12;
-}
-
-
-console.log(isNumber("+71234567800"));
-console.log(isNumber("+7123456789"));
-console.log(isNumber("71234567890"));
